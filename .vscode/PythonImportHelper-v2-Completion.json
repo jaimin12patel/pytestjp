@@ -1,0 +1,249 @@
+[
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "CommonAction",
+        "importPath": "common_actions",
+        "description": "common_actions",
+        "isExtraImport": true,
+        "detail": "common_actions",
+        "documentation": {}
+    },
+    {
+        "label": "CommonAction",
+        "importPath": "common_actions",
+        "description": "common_actions",
+        "isExtraImport": true,
+        "detail": "common_actions",
+        "documentation": {}
+    },
+    {
+        "label": "CommonAction",
+        "importPath": "common_actions",
+        "description": "common_actions",
+        "isExtraImport": true,
+        "detail": "common_actions",
+        "documentation": {}
+    },
+    {
+        "label": "BingPage",
+        "importPath": "pages.bing_page",
+        "description": "pages.bing_page",
+        "isExtraImport": true,
+        "detail": "pages.bing_page",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.wait",
+        "description": "selenium.webdriver.support.wait",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.wait",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "ActionChains",
+        "importPath": "selenium.webdriver.common.action_chains",
+        "description": "selenium.webdriver.common.action_chains",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.action_chains",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "importPath": "env",
+        "description": "env",
+        "isExtraImport": true,
+        "detail": "env",
+        "documentation": {}
+    },
+    {
+        "label": "BingPage",
+        "kind": 6,
+        "importPath": "pages.bing_page",
+        "description": "pages.bing_page",
+        "peekOfCode": "class BingPage(CommonAction):\n    BING_LOGO = By.ID('bLogo')\n    BING_SEARCH_BAR = By.NAME('q')\n    OWN_RESULT = By.XPATH('//*[@id=\"b_results\"]/li[1]/div/div[1]')\n    OWN_LINK_TEXT = By.LINK_TEXT('Own Company | Own Your Own Data')\n    OWN_LOGO = By.XPATH('/html/body/section[1]/div[1]/div[1]/a')\n    DROPDOWN_LIST = By.NAME('')\n    def verify_bing_search_engine_title(self, titleText):\n        self.validate_the_title(titleText)\n    def validate_bing_logo_displayed(self):",
+        "detail": "pages.bing_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "kind": 6,
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "peekOfCode": "class HomePage(CommonAction):\n    FORM_ALERT = (By.ID, \"flash\")\n    LOGOUT_BTN = (By.CLASS_NAME, \"button\")\n    def check_login_logout_status(self):\n        return self.wait_for(self.FORM_ALERT)\n    def click_logout_button(self):\n        self.find(self.LOGOUT_BTN).click()",
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "kind": 6,
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "peekOfCode": "class LoginPage(CommonAction):\n    FORM_AUTH_LOCATOR = (By.LINK_TEXT, \"Form Authentication\")\n    FORM_USERNAME = (By.ID, \"username\")\n    FORM_PASSWORD = (By.ID, \"password\")\n    FORM_SUBMIT_BTN = (By.XPATH, \"//button[@type='submit']\")\n    def navigate_to_form_page(self):\n        self.wait_for(self.FORM_AUTH_LOCATOR).click()\n    def enter_login_username(self, username):\n        self.wait_for(self.FORM_USERNAME).send_keys(username)\n    def enter_login_password(self, password):",
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "test_form_authentication",
+        "kind": 2,
+        "importPath": "tests.bing_test",
+        "description": "tests.bing_test",
+        "peekOfCode": "def test_form_authentication(driver):\n    bingPage = BingPage(driver)\n    bingPage.verify_bing_search_engine_title('bing')\n    assert bingPage.validate_bing_logo_displayed() is True\n    bingPage.search_on_the_search_bar_and_hit_enter('owndata')\n    bingPage.click_on_the_fist_result()\n    assert bingPage.validate_own_image_displayed() is True",
+        "detail": "tests.bing_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_form_authentication",
+        "kind": 2,
+        "importPath": "tests.login_test",
+        "description": "tests.login_test",
+        "peekOfCode": "def test_form_authentication(driver):\n    loginPage = LoginPage(driver)\n    homePage = HomePage(driver)\n    loginPage.navigate_to_form_page()\n    loginPage.enter_login_username(\"tomsmith\")\n    loginPage.enter_login_password(\"SuperSecretPassword!\")\n    loginPage.click_login_button()\n    assert \"logged in\" in homePage.check_login_logout_status().text \n    homePage.click_logout_button()\n    assert \"logged out\" in homePage.check_login_logout_status().text",
+        "detail": "tests.login_test",
+        "documentation": {}
+    },
+    {
+        "label": "CommonAction",
+        "kind": 6,
+        "importPath": "common_actions",
+        "description": "common_actions",
+        "peekOfCode": "class CommonAction:\n    def __init__(self, driver):\n        self.driver = driver\n        self.wait = WebDriverWait(self.driver, 10)\n    def wait_for(self, locator):\n        return self.wait.until(ec.presence_of_element_located(locator))\n    def find(self, locator):\n        return self.driver.find_element(*locator)\n    def validate_the_title(self, titleText):\n        self.wait.until(ec.title_is(titleText), 2000)",
+        "detail": "common_actions",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 2,
+        "importPath": "conftest",
+        "description": "conftest",
+        "peekOfCode": "def driver():\n    if(result['browser'] == \"chrome\"):\n        driver = webdriver.Chrome()\n    else:\n        driver = webdriver.Firefox()\n    driver.get(result['writeLoginUrl'])\n    yield driver\n    driver.close()",
+        "detail": "conftest",
+        "documentation": {}
+    },
+    {
+        "label": "envName",
+        "kind": 5,
+        "importPath": "env",
+        "description": "env",
+        "peekOfCode": "envName = os.environ.get('ENV_NAME', 'heroLogin')\nbrowser = os.environ.get('BROWSER', 'chrome')\nurl = {\n    'heroLogin': 'https://the-internet.herokuapp.com',\n    'bing': 'https://www.bing.com/',\n}\nwriteLoginUrl = url['heroLogin'] if envName == 'heroLogin' else url['bing']\nresult = {\n    'writeLoginUrl': writeLoginUrl,\n    'env': envName,",
+        "detail": "env",
+        "documentation": {}
+    },
+    {
+        "label": "browser",
+        "kind": 5,
+        "importPath": "env",
+        "description": "env",
+        "peekOfCode": "browser = os.environ.get('BROWSER', 'chrome')\nurl = {\n    'heroLogin': 'https://the-internet.herokuapp.com',\n    'bing': 'https://www.bing.com/',\n}\nwriteLoginUrl = url['heroLogin'] if envName == 'heroLogin' else url['bing']\nresult = {\n    'writeLoginUrl': writeLoginUrl,\n    'env': envName,\n    'browser': browser",
+        "detail": "env",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "env",
+        "description": "env",
+        "peekOfCode": "url = {\n    'heroLogin': 'https://the-internet.herokuapp.com',\n    'bing': 'https://www.bing.com/',\n}\nwriteLoginUrl = url['heroLogin'] if envName == 'heroLogin' else url['bing']\nresult = {\n    'writeLoginUrl': writeLoginUrl,\n    'env': envName,\n    'browser': browser\n}",
+        "detail": "env",
+        "documentation": {}
+    },
+    {
+        "label": "writeLoginUrl",
+        "kind": 5,
+        "importPath": "env",
+        "description": "env",
+        "peekOfCode": "writeLoginUrl = url['heroLogin'] if envName == 'heroLogin' else url['bing']\nresult = {\n    'writeLoginUrl': writeLoginUrl,\n    'env': envName,\n    'browser': browser\n}",
+        "detail": "env",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "env",
+        "description": "env",
+        "peekOfCode": "result = {\n    'writeLoginUrl': writeLoginUrl,\n    'env': envName,\n    'browser': browser\n}",
+        "detail": "env",
+        "documentation": {}
+    }
+]
