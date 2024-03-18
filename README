@@ -1,0 +1,14 @@
+# Welcome To pytest POC
+
+## Needed Tools ##
+    # Python 3
+    # Pip
+
+# For config the pytest project please run this command on terminal "pip install -r requirements. txt"
+
+# Once it's install try to run the below test by terminal to see all configured correctly
+
+"ENV_NAME='heroLogin' BROWSER='chrome' pytest tests/login_test.py --html=report.html"
+
+
+
